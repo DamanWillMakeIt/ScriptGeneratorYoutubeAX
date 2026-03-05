@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from app.agents.producer import ProducerAgent
 from app.middleware.auth import AuthMiddleware
 from app.services.key_store import init_db, generate_key, get_usage, revoke_key
-from app.services.job_store import JobStore
+from app.services.job_store import JobStore, init_jobs_db
 
 load_dotenv()
 
@@ -37,6 +37,7 @@ app.add_middleware(AuthMiddleware)
 @app.on_event("startup")
 async def startup():
     init_db()
+    init_jobs_db()
 
 # ── Shared job store ──────────────────────────────────────────────────────────
 jobs = JobStore()

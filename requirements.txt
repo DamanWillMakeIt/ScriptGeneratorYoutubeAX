@@ -1,0 +1,19 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi
+uvicorn
+python-multipart
+
+# ── AI Providers ─────────────────────────────────────────────────────────────
+google-generativeai        # Gemini  (primary)
+openai                     # OpenAI  (secondary)
+anthropic                  # Claude  (tertiary)
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv
+fpdf2
+cloudinary
+requests
+pillow
+youtube-transcript-api
+google-api-python-client   # YouTube Data API v3
+pymongo

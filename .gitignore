@@ -1,0 +1,26 @@
+# --- Security (CRITICAL) ---
+.env
+.env.local
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# --- Generated Content ---
+# Ignore the PDFs your agent generates locally
+*.pdf
+script_*.pdf
+transcripts/
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Logs ---
+*.log
